@@ -1,45 +1,34 @@
 <template>
   <form @submit.prevent="onsubmit()">
-    <va-input
-      v-model="email"
-      class="mb-4"
-      type="email"
-      :label="t('auth.email')"
-      :error="!!emailErrors.length"
-      :error-messages="emailErrors"
-    />
+    
+    <div class="card flex justify-content-center py-6">
+      <span class="p-float-label w-full ">
+          <InputText type="email" style="background-color: #ECF0F1;" id="username" class="w-full" v-model="email"/>
+          <label style="font-size: 16px;" for="username">Email</label>
+      </span>
+    </div>
+    <div class="card flex justify-content-center py-6">
 
-    <va-input
-      v-model="password"
-      class="mb-4"
-      type="password"
-      :label="t('auth.password')"
-      :error="!!passwordErrors.length"
-      :error-messages="passwordErrors"
-    />
+      <span class="p-float-label w-full">
+          <InputText style="background-color: #ECF0F1;" type="password" id="username" class="w-full bg-[#ECF0F1]" v-model="password" />
+          <label style="font-size: 16px;" for="username">password</label>
+      </span>
+  </div>
+
+   
 
     <div class="auth-layout__options flex items-center justify-between">
-      <va-checkbox
-        v-model="agreedToTerms"
-        class="mb-0"
-        :error="!!agreedToTermsErrors.length"
-        :error-messages="agreedToTermsErrors"
-      >
-        <template #label>
-          <span class="ml-2">
-            {{ t('auth.agree') }}
-            <span class="va-link">{{ t('auth.termsOfUse') }}</span>
-          </span>
-        </template>
-      </va-checkbox>
+    
       <router-link class="ml-1 va-link" :to="{ name: 'recover-password' }">
         {{ t('auth.recover_password') }}
       </router-link>
     </div>
 
     <div class="flex justify-center mt-4">
-      <va-button class="my-0" @click="onsubmit">{{ t('auth.sign_up') }}</va-button>
+      <button style="background-color: #448AEB !important;border-radius: 10px;color:white" class="w-full lg:w-[50%] py-2 text-lg" @click="onsubmit" >{{ t('auth.sign_up') }}</button>
     </div>
+
+   
   </form>
 </template>
 

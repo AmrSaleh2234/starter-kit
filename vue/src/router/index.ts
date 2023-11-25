@@ -10,17 +10,49 @@ import UIRoute from '../pages/admin/ui/route'
 const routes: Array<RouteRecordRaw> = [
   {
     path: '/:catchAll(.*)',
-    redirect: { name: 'dashboard' },
+    redirect: { name: 'project' },
   },
+  
   {
+    
     name: 'admin',
     path: '/admin',
     component: AppLayout,
     children: [
+     {
+        name: 'project',
+        path: 'project',
+        component: () => import('../pages/admin/project/index.vue'),
+      },
       {
-        name: 'dashboard',
-        path: 'dashboard',
-        component: () => import('../pages/admin/dashboard/Dashboard.vue'),
+        name: 'COMPETITIVE PESEARCH',
+        path: 'COMPETITIVE PESEARCH',
+        component: () => import('../pages/admin/competitive/index.vue'),
+      },
+      {
+        name: 'KEYWORD PESEARCH',
+        path: 'KEYWORD PESEARCH',
+        component: () => import('../pages/admin/keyword/index.vue'),
+      },
+      {
+        name: 'BACKLINK PESEARCH',
+        path: 'BACKLINK PESEARCH',
+        component: () => import('../pages/admin/backlink/index.vue'),
+      },
+      {
+        name: 'ON PAGE & TECH SEO',
+        path: 'ON PAGE & TECH SEO',
+        component: () => import('../pages/admin/onpage/index.vue'),
+      },
+      {
+        name: 'ON PAGE & TECH SEO',
+        path: 'ON PAGE & TECH SEO',
+        component: () => import('../pages/admin/onpage/index.vue'),
+      },
+      {
+        name: 'Account',
+        path: 'Account',
+        component: () => import('../pages/admin/account/index.vue'),
       },
       {
         name: 'statistics',
@@ -42,116 +74,6 @@ const routes: Array<RouteRecordRaw> = [
             meta: {
               wikiLink: 'https://github.com/epicmaxco/vuestic-admin/wiki/Progress-Bars',
             },
-          },
-        ],
-      },
-      {
-        name: 'forms',
-        path: 'forms',
-        component: RouteViewComponent,
-        children: [
-          {
-            name: 'form-elements',
-            path: 'form-elements',
-            component: () => import('../pages/admin/forms/form-elements/FormElements.vue'),
-            meta: {
-              wikiLink: 'https://github.com/epicmaxco/vuestic-admin/wiki/inputs',
-            },
-          },
-          {
-            name: 'medium-editor',
-            path: 'medium-editor',
-            component: () => import('../pages/admin/forms/medium-editor/MediumEditor.vue'),
-            meta: {
-              wikiLink: 'https://github.com/epicmaxco/vuestic-admin/wiki/Medium-Editor',
-            },
-          },
-        ],
-      },
-      {
-        name: 'maps',
-        path: 'maps',
-        component: RouteViewComponent,
-        children: [
-          {
-            name: 'maplibre-maps',
-            path: 'maplibre-maps',
-            component: () => import('../pages/admin/maps/maplibre-maps/MapLibreMapsPage.vue'),
-            meta: {
-              wikiLink: 'https://github.com/epicmaxco/vuestic-admin/wiki/Maps',
-            },
-          },
-          {
-            name: 'yandex-maps',
-            path: 'yandex-maps',
-            component: () => import('../pages/admin/maps/yandex-maps/YandexMapsPage.vue'),
-            meta: {
-              wikiLink: 'https://github.com/epicmaxco/vuestic-admin/wiki/Maps',
-            },
-          },
-          {
-            name: 'leaflet-maps',
-            path: 'leaflet-maps',
-            component: () => import('../pages/admin/maps/leaflet-maps/LeafletMapsPage.vue'),
-            meta: {
-              wikiLink: 'https://github.com/epicmaxco/vuestic-admin/wiki/Maps',
-            },
-          },
-          {
-            name: 'bubble-maps',
-            path: 'bubble-maps',
-            component: () => import('../pages/admin/maps/bubble-maps/BubbleMapsPage.vue'),
-            meta: {
-              wikiLink: 'https://github.com/epicmaxco/vuestic-admin/wiki/Maps',
-            },
-          },
-          {
-            name: 'line-maps',
-            path: 'line-maps',
-            component: () => import('../pages/admin/maps/line-maps/LineMapsPage.vue'),
-            meta: {
-              wikiLink: 'https://github.com/epicmaxco/vuestic-admin/wiki/Maps',
-            },
-          },
-        ],
-      },
-      {
-        name: 'tables',
-        path: 'tables',
-        component: RouteViewComponent,
-        children: [
-          {
-            name: 'markup',
-            path: 'markup',
-            component: () => import('../pages/admin/tables/markup-tables/MarkupTables.vue'),
-            meta: {
-              wikiLink: 'https://github.com/epicmaxco/vuestic-admin/wiki/Tables',
-            },
-          },
-          {
-            name: 'data',
-            path: 'data',
-            component: () => import('../pages/admin/tables/data-tables/DataTables.vue'),
-            meta: {
-              wikiLink: 'https://github.com/epicmaxco/vuestic-admin/wiki/Tables',
-            },
-          },
-        ],
-      },
-      {
-        name: 'pages',
-        path: 'pages',
-        component: RouteViewComponent,
-        children: [
-          {
-            name: '404-pages',
-            path: '404-pages',
-            component: () => import('../pages/admin/pages/404PagesPage.vue'),
-          },
-          {
-            name: 'faq',
-            path: 'faq',
-            component: () => import('../pages/admin/pages/FaqPage.vue'),
           },
         ],
       },

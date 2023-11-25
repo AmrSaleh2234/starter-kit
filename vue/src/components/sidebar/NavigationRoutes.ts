@@ -12,30 +12,49 @@ export default {
   },
   routes: [
     {
-      name: 'dashboard',
-      displayName: 'menu.dashboard',
+      name: 'project',
+      displayName: 'project',
       meta: {
-        icon: 'vuestic-iconset-dashboard',
+        icon: 'hotel',
       },
     },
     {
-      name: 'statistics',
-      displayName: 'menu.statistics',
+      name: 'COMPETITIVE PESEARCH',
+      displayName: 'COMPETITIVE PESEARCH',
       meta: {
-        icon: 'vuestic-iconset-statistics',
+        icon: 'support',
       },
-      disabled: true,
-      children: [
-        {
-          name: 'users',
-          displayName: 'menu.users',
-        },
-        {
-          name: 'progress-bars',
-          displayName: 'menu.progressBars',
-        },
-      ],
     },
+    {
+      name: 'KEYWORD PESEARCH',
+      displayName: 'KEYWORD PESEARCH',
+      meta: {
+        icon: 'eye',
+      },
+    },
+    {
+      name: 'BACKLINK PESEARCH',
+      displayName: 'BACKLINK PESEARCH',
+      meta: {
+        icon: 'report',
+      },
+    },
+    {
+      name: 'ON PAGE & TECH SEO',
+      displayName: 'ON PAGE & TECH SEO',
+      meta: {
+        icon: 'chat',
+      },
+    },
+    {
+      name: 'Account',
+      displayName: 'ACCOUNT',
+      meta: {
+        icon: 'settings',
+      },
+    },
+
+    
 
   ] as INavigationRoute[],
 }

@@ -1,16 +1,16 @@
 <template>
   <form class="login" @submit.prevent="onsubmit">
-    <va-input
-      v-model="email"
-      class="mb-4"
-      type="email"
-      :label="t('auth.email')"
-      :error="!!emailErrors.length"
-      :error-messages="emailErrors"
-    />
+    
+    <div class="card flex justify-content-center py-6">
+      <span class="p-float-label w-full ">
+          <InputText type="email" style="background-color: #ECF0F1;" id="username" class="w-full" v-model="email"/>
+          <label style="font-size: 16px;" for="username">Email</label>
+      </span>
+    </div>
 
+    
     <div class="flex justify-center mt-4">
-      <va-button type="submit" class="my-0">{{ t('auth.reset_password') }}</va-button>
+      <button style="background-color: #448AEB !important;border-radius: 10px;color:white" class="w-full lg:w-[50%] py-2 text-lg" @click="onsubmit" >{{ t('auth.reset_password') }}</button>
     </div>
   </form>
 </template>

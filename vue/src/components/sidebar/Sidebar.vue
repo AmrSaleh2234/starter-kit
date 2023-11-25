@@ -21,7 +21,7 @@
     }>(),
     {
       width: '16rem',
-      color: 'secondary',
+      color: '#F5F6FB',
       animated: true,
       minimized: true,
       minimizedWidth: undefined,

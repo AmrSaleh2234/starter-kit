@@ -2,7 +2,12 @@
   <div class="auth-layout grid grid-cols-12 content-center">
     <div class="flex col-span-12 p-4 justify-center">
       <router-link class="py-5 justify-center flex" to="/">
-        <vuestic-logo height="32" />
+         <span class="text-[#e39096] text-6xl font-bold my-auto">P</span>
+         <span class="text-[rgb(68,138,235)] text-6xl font-bold my-auto">O</span>
+         <span class="text-[#e39096] text-6xl font-bold my-auto">J</span>
+         <span class="text-[#448AEB] text-6xl font-bold my-auto">E</span>
+         <span class="text-[#e39096] text-6xl font-bold my-auto">C</span>
+         <span class="text-[#448AEB] text-6xl font-bold my-auto">T</span>
       </router-link>
     </div>
 
