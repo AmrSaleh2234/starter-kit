@@ -42,12 +42,12 @@
   })
 
   const fetchData = () => {
-    axios.get('/api/drivers').then((res) => {
+    axios.post('https://api.dataforseo.com/v3/dataforseo_labs/google/ranked_keywords/live', {
+      data: {}
+    },
+    ).then((res) => {
 
       console.log(res)
-      loading.value = false
-      users.value = res.data.drivers
-      console.log(users.value)
     })
   }
   const active = (data) => {
@@ -256,7 +256,7 @@ const positions = ref([
   <!--              />-->
               </div>
             </template>
-  
+
             <template #end>
   <!--            <FileUpload-->
   <!--              mode="basic"-->
@@ -334,8 +334,8 @@ const positions = ref([
               {{ slotProps.data.phone }}
             </template>
           </Column>
-          
-          
+
+
           <Column
             field="email_verified"
             header="Email Verified"
@@ -352,7 +352,7 @@ const positions = ref([
 
             </template>
           </Column>
-          
+
 
           <Column header-style="min-width:10rem;">
             <template #body="slotProps">
