@@ -1,5 +1,6 @@
 
 <template>
+    
     <va-card class=" h-full py-[1%] px-2 ">
         <div class="card">
             <Chart type="bar" :data="chartData" :options="chartOptions" />
@@ -10,11 +11,29 @@
 
 <script setup>
 import { ref, onMounted } from "vue";
+  import axios from 'axios'
+const fetchData = () => {
+    axios.post('https://api.dataforseo.com/v3/dataforseo_labs/google/ranked_keywords/live', {
+      data: {
+         "target": "dataforseo.com",
+        "date_from": "2020-01-01",
+      "date_to": "2021-01-01"
+        
+        }
+    },
+    ).then((res) => {
+     
 
+      console.log(res.data.tasks[0].result[0].metrics.organic)
+      console.log(chartData.value.datasets[0])
+    })
+  }
 onMounted(() => {
+  
+
     chartData.value = setChartData();
     chartOptions.value = setChartOptions();
-});
+})
 
 const chartData = ref();
 const chartOptions = ref();

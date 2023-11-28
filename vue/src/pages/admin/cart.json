@@ -1,0 +1,378 @@
+{
+    "version": "0.1.20230825",
+    "status_code": 20000,
+    "status_message": "Ok.",
+    "time": "0.1571 sec.",
+    "cost": 0.02012,
+    "tasks_count": 1,
+    "tasks_error": 0,
+    "tasks": [
+      {
+        "id": "09291750-1535-0266-0000-7aab5e588023",
+        "status_code": 20000,
+        "status_message": "Ok.",
+        "time": "0.0662 sec.",
+        "cost": 0.02012,
+        "result_count": 1,
+        "path": [
+          "v3",
+          "backlinks",
+          "history",
+          "live"
+        ],
+        "data": {
+          "api": "backlinks",
+          "function": "history",
+          "target": "ibm.com",
+          "date_from": "2020-08-01",
+          "date_to": "2021-01-01"
+        },
+        "result": [
+          {
+            "target": "ibm.com",
+            "date_from": "2020-08-01",
+            "date_to": "2021-01-01",
+            "items_count": 4,
+            "items": [
+              {
+                
+                "type": "backlinks_history",
+                "date": "2020-08-31 00:00:00 +00:00",
+                "rank": 598,
+                "backlinks": 7960551,
+                "new_backlinks": 528250,
+                "lost_backlinks": 243962,
+                "new_referring_domains": 3439,
+                "lost_referring_domains": 860,
+                "crawled_pages": 2317216,
+                "info": {
+                  "server": null,
+                  "cms": null,
+                  "platform_type": null,
+                  "ip_address": "104.109.76.210",
+                  "country": null,
+                  "is_ip": false,
+                  "target_spam_score": 0
+                },
+                "internal_links_count": 48310894,
+                "external_links_count": 7036559,
+                "broken_backlinks": 0,
+                "broken_pages": 150008,
+                "referring_domains": 191515,
+                "referring_domains_nofollow": 4489,
+                "referring_main_domains": 146676,
+                "referring_main_domains_nofollow": 3438,
+                "referring_ips": 95885,
+                "referring_subnets": 54931,
+                "referring_pages": 7265491,
+                "referring_links_tld": {
+                  "com": 3581003,
+                  "org": 883349,
+                  "tv": 868565,
+                  "edu": 595793,
+                  "net": 347933,
+                  "ru": 115490,
+                  "io": 113234,
+                  "de": 61048,
+                  "com.br": 55193,
+                  "fr": 34685
+                },
+                "referring_links_types": {
+                  "anchor": 7206570,
+                  "redirect": 57359,
+                  "canonical": 1545,
+                  "alternate": 17
+                },
+                "referring_links_attributes": {
+                  "nofollow": 973850,
+                  "noopener": 753384,
+                  "noreferrer": 144929,
+                  "external": 82838,
+                  "ugc": 6768,
+                  "bookmark": 1519,
+                  "alternate": 668,
+                  "author": 474,
+                  "tag": 350,
+                  "sponsored": 110
+                },
+                "referring_links_platform_types": {
+                  "unknown": 6418758,
+                  "cms": 696561,
+                  "blogs": 631531,
+                  "wikis": 38885,
+                  "ecommerce": 18248,
+                  "message-boards": 15656
+                },
+                "referring_links_semantic_locations": {
+                  "": 3687993,
+                  "footer": 1779772,
+                  "section": 997508,
+                  "article": 426672,
+                  "aside": 114124,
+                  "header": 111368,
+                  "nav": 103593,
+                  "main": 38299,
+                  "figure": 4910,
+                  "figcaption": 889
+                },
+                "referring_links_countries": null
+              },
+              {
+                "type": "backlinks_history",
+                "date": "2020-09-30 00:00:00 +00:00",
+                "rank": 600,
+                "backlinks": 8231030,
+                "new_backlinks": 407125,
+                "lost_backlinks": 155261,
+                "new_referring_domains": 4555,
+                "lost_referring_domains": 751,
+                "crawled_pages": 2390151,
+                "info": {
+                  "server": "ustream/web",
+                  "cms": null,
+                  "platform_type": [
+                    "unknown"
+                  ],
+                  "ip_address": "104.109.76.210",
+                  "country": null,
+                  "is_ip": false,
+                  "target_spam_score": 0
+                },
+                "internal_links_count": 48306246,
+                "external_links_count": 6814735,
+                "broken_backlinks": 0,
+                "broken_pages": 153405,
+                "referring_domains": 196837,
+                "referring_domains_nofollow": 4730,
+                "referring_main_domains": 150753,
+                "referring_main_domains_nofollow": 3635,
+                "referring_ips": 98439,
+                "referring_subnets": 55945,
+                "referring_pages": 7523423,
+                "referring_links_tld": {
+                  "com": 3649487,
+                  "org": 1011765,
+                  "tv": 867263,
+                  "edu": 597002,
+                  "net": 355506,
+                  "ru": 138864,
+                  "io": 115358,
+                  "de": 68799,
+                  "com.br": 57495,
+                  "fr": 34360
+                },
+                "referring_links_types": {
+                  "anchor": 7462829,
+                  "redirect": 58950,
+                  "canonical": 1626,
+                  "alternate": 18
+                },
+                "referring_links_attributes": {
+                  "nofollow": 971813,
+                  "noopener": 748692,
+                  "noreferrer": 154975,
+                  "external": 85418,
+                  "ugc": 7674,
+                  "bookmark": 2439,
+                  "alternate": 676,
+                  "author": 415,
+                  "tag": 356,
+                  "sponsored": 116
+                },
+                "referring_links_platform_types": {
+                  "unknown": 6630888,
+                  "cms": 737977,
+                  "blogs": 673558,
+                  "wikis": 39589,
+                  "ecommerce": 19351,
+                  "message-boards": 16027
+                },
+                "referring_links_semantic_locations": {
+                  "": 3761537,
+                  "footer": 1935941,
+                  "section": 986991,
+                  "article": 445547,
+                  "header": 120263,
+                  "aside": 116787,
+                  "nav": 108846,
+                  "main": 40953,
+                  "figure": 5269,
+                  "figcaption": 929
+                },
+                "referring_links_countries": null
+              },
+              {
+                "type": "backlinks_history",
+                "date": "2020-10-31 00:00:00 +00:00",
+                "rank": 602,
+                "backlinks": 8561190,
+                "new_backlinks": 455524,
+                "lost_backlinks": 156158,
+                "new_referring_domains": 4580,
+                "lost_referring_domains": 388,
+                "crawled_pages": 2485792,
+                "info": {
+                  "server": null,
+                  "cms": null,
+                  "platform_type": [
+                    "unknown"
+                  ],
+                  "ip_address": "104.109.76.210",
+                  "country": null,
+                  "is_ip": false,
+                  "target_spam_score": 0
+                },
+                "internal_links_count": 49573669,
+                "external_links_count": 6900594,
+                "broken_backlinks": 0,
+                "broken_pages": 157439,
+                "referring_domains": 203646,
+                "referring_domains_nofollow": 4969,
+                "referring_main_domains": 155524,
+                "referring_main_domains_nofollow": 3812,
+                "referring_ips": 101117,
+                "referring_subnets": 57034,
+                "referring_pages": 7831950,
+                "referring_links_tld": {
+                  "com": 3718284,
+                  "org": 1170115,
+                  "tv": 867765,
+                  "edu": 598029,
+                  "net": 366456,
+                  "ru": 167229,
+                  "io": 118880,
+                  "de": 72381,
+                  "com.br": 65144,
+                  "it": 35100
+                },
+                "referring_links_types": {
+                  "anchor": 7770042,
+                  "redirect": 60217,
+                  "canonical": 1672,
+                  "alternate": 19
+                },
+                "referring_links_attributes": {
+                  "nofollow": 970935,
+                  "noopener": 745230,
+                  "noreferrer": 167836,
+                  "external": 88874,
+                  "ugc": 8085,
+                  "bookmark": 2462,
+                  "alternate": 687,
+                  "author": 398,
+                  "tag": 362,
+                  "sponsored": 124
+                },
+                "referring_links_platform_types": {
+                  "unknown": 6897418,
+                  "cms": 776539,
+                  "blogs": 710442,
+                  "wikis": 40448,
+                  "ecommerce": 22248,
+                  "message-boards": 16470
+                },
+                "referring_links_semantic_locations": {
+                  "": 3845675,
+                  "footer": 2146663,
+                  "section": 974315,
+                  "article": 463646,
+                  "header": 124594,
+                  "aside": 118868,
+                  "nav": 107545,
+                  "main": 43866,
+                  "figure": 5432,
+                  "figcaption": 988
+                },
+                "referring_links_countries": null
+              },
+              {
+                "type": "backlinks_history",
+                "date": "2020-12-31 00:00:00 +00:00",
+                "rank": 603,
+                "backlinks": 8900727,
+                "new_backlinks": 185603,
+                "lost_backlinks": 68434,
+                "new_referring_domains": 1466,
+                "lost_referring_domains": 153,
+                "crawled_pages": 2610252,
+                "info": {
+                  "server": null,
+                  "cms": null,
+                  "platform_type": [
+                    "unknown"
+                  ],
+                  "ip_address": "104.109.76.210",
+                  "country": null,
+                  "is_ip": false,
+                  "target_spam_score": 0
+                },
+                "internal_links_count": 52322051,
+                "external_links_count": 7251238,
+                "broken_backlinks": 0,
+                "broken_pages": 162728,
+                "referring_domains": 209218,
+                "referring_domains_nofollow": 5153,
+                "referring_main_domains": 159477,
+                "referring_main_domains_nofollow": 3954,
+                "referring_ips": 103145,
+                "referring_subnets": 57852,
+                "referring_pages": 8156763,
+                "referring_links_tld": {
+                  "com": 3766489,
+                  "org": 1352682,
+                  "tv": 868091,
+                  "edu": 598769,
+                  "net": 376591,
+                  "ru": 206205,
+                  "io": 127906,
+                  "de": 76675,
+                  "com.br": 71597,
+                  "it": 37572
+                },
+                "referring_links_types": {
+                  "anchor": 8093750,
+                  "redirect": 61248,
+                  "canonical": 1745,
+                  "alternate": 20
+                },
+                "referring_links_attributes": {
+                  "nofollow": 970410,
+                  "noopener": 736981,
+                  "noreferrer": 175502,
+                  "external": 91788,
+                  "ugc": 8854,
+                  "bookmark": 2472,
+                  "alternate": 659,
+                  "author": 401,
+                  "tag": 366,
+                  "sponsored": 133
+                },
+                "referring_links_platform_types": {
+                  "unknown": 7201817,
+                  "cms": 793888,
+                  "blogs": 726552,
+                  "wikis": 41098,
+                  "ecommerce": 24428,
+                  "message-boards": 16765
+                },
+                "referring_links_semantic_locations": {
+                  "": 3939792,
+                  "footer": 2366930,
+                  "section": 963461,
+                  "article": 477386,
+                  "header": 131548,
+                  "aside": 121288,
+                  "nav": 102878,
+                  "main": 46563,
+                  "figure": 5535,
+                  "figcaption": 1020
+                },
+                "referring_links_countries": null
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+  

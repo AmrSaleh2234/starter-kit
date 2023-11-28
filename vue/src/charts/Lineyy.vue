@@ -21,16 +21,16 @@ onMounted(() => {
     chartData.value = setChartData();
     chartOptions.value = setChartOptions();
      console.log(data.tasks[0].result[0].items[0].new_referring_domains)
-    chartData.value.datasets[0].data[0]=data.tasks[0].result[0].items[0].new_referring_domains
-    chartData.value.datasets[0].data[1]=data.tasks[0].result[0].items[1].new_referring_domains
-    chartData.value.datasets[0].data[2]=data.tasks[0].result[0].items[2].new_referring_domains
-    chartData.value.datasets[0].data[3]=data.tasks[0].result[0].items[3].new_referring_domains
+    chartData.value.datasets[0].data[0]=data.tasks[0].result[0].items[0].new_backlinks
+    chartData.value.datasets[0].data[1]=data.tasks[0].result[0].items[1].new_backlinks
+    chartData.value.datasets[0].data[2]=data.tasks[0].result[0].items[2].new_backlinks
+    chartData.value.datasets[0].data[3]=data.tasks[0].result[0].items[3].new_backlinks
 
     
-     chartData.value.datasets[1].data[0]=-data.tasks[0].result[0].items[0].lost_referring_domains
-    chartData.value.datasets[1].data[1]=-data.tasks[0].result[0].items[1].lost_referring_domains
-    chartData.value.datasets[1].data[2]=-data.tasks[0].result[0].items[2].lost_referring_domains
-    chartData.value.datasets[1].data[3]=-data.tasks[0].result[0].items[3].lost_referring_domains
+     chartData.value.datasets[1].data[0]=-data.tasks[0].result[0].items[0].lost_backlinks
+    chartData.value.datasets[1].data[1]=-data.tasks[0].result[0].items[1].lost_backlinks
+    chartData.value.datasets[1].data[2]=-data.tasks[0].result[0].items[2].lost_backlinks
+    chartData.value.datasets[1].data[3]=-data.tasks[0].result[0].items[3].lost_backlinks
     
     
 });

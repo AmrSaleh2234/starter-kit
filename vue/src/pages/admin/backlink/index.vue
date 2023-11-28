@@ -43,11 +43,17 @@
 
   const fetchData = () => {
     axios.post('https://api.dataforseo.com/v3/dataforseo_labs/google/ranked_keywords/live', {
-      data: {}
+      data: {
+         "target": "dataforseo.com",
+        "date_from": "2020-01-01",
+      "date_to": "2021-01-01"
+        
+        }
     },
     ).then((res) => {
+      loading.value=false
 
-      console.log(res)
+      console.log(res.data.tasks[0].result[0].metrics.organic)
     })
   }
   const active = (data) => {

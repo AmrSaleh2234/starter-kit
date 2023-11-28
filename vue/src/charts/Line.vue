@@ -10,10 +10,18 @@
 
 <script setup>
 import { ref, onMounted } from "vue";
-
+import data from '../pages/admin/cart.json'
 onMounted(() => {
     chartData.value = setChartData();
     chartOptions.value = setChartOptions();
+     console.log(data.tasks[0].result[0].items[0].new_referring_domains)
+    chartData.value.datasets[0].data[0]=data.tasks[0].result[0].items[0].referring_domains
+    chartData.value.datasets[0].data[1]=data.tasks[0].result[0].items[1].referring_domains
+    chartData.value.datasets[0].data[2]=data.tasks[0].result[0].items[2].referring_domains
+    chartData.value.datasets[0].data[3]=data.tasks[0].result[0].items[3].referring_domains
+
+    
+    
 });
 
 const chartData = ref();
@@ -23,12 +31,12 @@ const setChartData = () => {
     const documentStyle = getComputedStyle(document.documentElement);
 
     return {
-        labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
+        labels: ['January', 'February', 'March', 'April'],
         datasets: [
           
             {
                 label: 'Third Dataset',
-                data: [12, 51, 62, 33, 21, 62, 45],
+                data: [''],
                 fill: true,
                 borderColor: documentStyle.getPropertyValue('--blue-500'),
                 tension: 0.4,
