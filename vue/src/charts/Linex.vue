@@ -1,7 +1,7 @@
 <template>
-    <va-card class=" h-full py-[1%] px-2 ">
-        <div class="  card flex justify-content-center">
-            <Chart style="" type="doughnut" :data="chartData" :options="chartOptions" class="w-full " />
+    <va-card class=" h-full py-[1%] px-2 grid grid-cols-3 ">
+        <div class=" col-span-2 card flex justify-content-center">
+            <Chart style="" type="doughnut" :data="chartData" :options="chartOptions" class="" />
         </div>
     </va-card>
    
@@ -27,11 +27,11 @@ const setChartData = () => {
     const documentStyle = getComputedStyle(document.body);
 
     return {
-        labels: ['A', 'B', 'C'],
+        labels: ['com', 'in', '.net','other'],
         datasets: [
             {
                 data: [''],
-                backgroundColor: [documentStyle.getPropertyValue('--blue-500'), documentStyle.getPropertyValue('--yellow-500'), documentStyle.getPropertyValue('--green-500')],
+                backgroundColor: [documentStyle.getPropertyValue('--blue-300'), documentStyle.getPropertyValue('--red-500'), documentStyle.getPropertyValue('--yellow-500'), documentStyle.getPropertyValue('--green-500')],
                 hoverBackgroundColor: [documentStyle.getPropertyValue('--blue-400'), documentStyle.getPropertyValue('--yellow-400'), documentStyle.getPropertyValue('--green-400')]
             }
         ]

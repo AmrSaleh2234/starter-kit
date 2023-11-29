@@ -2,6 +2,7 @@
 <template>
     <va-card class=" h-full py-[1%] px-2 ">
         <div class="card">
+            <h class="font-bold text-lg ">New and Lost Referring Domains</h>
             <Chart type="bar" :data="chartData" :options="chartOptions" class="h-30rem" />
         </div>
     </va-card>
@@ -44,14 +45,14 @@ const setChartData = () =>  {
             {
                 type: 'bar',
                 label: 'Dataset 1',
-                backgroundColor: documentStyle.getPropertyValue('--blue-500'),
+                backgroundColor: documentStyle.getPropertyValue('--blue-300'),
                 data: ['']
             },
             
             {
                 type: 'bar',
                 label: 'Dataset 3',
-                backgroundColor: documentStyle.getPropertyValue('--yellow-500'),
+                backgroundColor: documentStyle.getPropertyValue('--orange-500'),
                 data: ['']
             }
         ]

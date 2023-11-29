@@ -1,19 +1,65 @@
 
 <template>
     <va-card class=" h-full py-[1%] px-2 ">
-        <div class="card">
-            <Chart type="bar" :data="chartData" :options="chartOptions" class="h-30rem"  />
-        </div>
+      <h style="border-bottom:1px solid rgb(132, 122, 122);" class="w-full py-1 text-2xl font-bold">Backlinks Types</h>  
+      <div class="my-2">
+        <h1 class="text-lg font-bold " >Text</h1>
+        <ProgressBar style="background-color:"  :value="keyword.text"></ProgressBar>
+      </div>
+       <div class="my-2">
+        <h1 class="text-lg font-bold " >Image</h1>
+        <ProgressBar  :value="keyword.Image"></ProgressBar>
+      </div>
+       <div class="my-2">
+        <h1 class="text-lg font-bold " >Form</h1>
+        <ProgressBar  :value="keyword.form"></ProgressBar>
+      </div>      
+       <h style="border-bottom:1px solid rgb(132, 122, 122);" class="w-full pt-5 text-2xl font-bold">Link Attributes Types</h>  
+      <div class="my-2">
+        <h1 class="text-lg font-bold " >Follow</h1>
+        <ProgressBar style="background-color:"  :value="keyword.Follow"></ProgressBar>
+      </div>
+       <div class="my-2">
+        <h1 class="text-lg font-bold " >Unfollow</h1>
+        <ProgressBar  :value="keyword.Unfollow"></ProgressBar>
+      </div>
+       <div class="my-2">
+        <h1 class="text-lg font-bold " >Sponsored</h1>
+        <ProgressBar  :value="keyword.Sponsored"></ProgressBar>
+      </div>  
+        <div class="my-2">
+        <h1 class="text-lg font-bold " >UGC</h1>
+        <ProgressBar  :value="keyword.UGC"></ProgressBar>
+      </div>      
     </va-card>
    
 </template>
 
 <script setup>
 import { ref, onMounted } from "vue";
+const keyword=ref({
+    text:'',
+    Image:'',
+    form:'',
+    Follow:'',
+    Unfollow:'',
+    Sponsored:'',
+    UGC:''
 
+})
+import data from '../pages/admin/cart.json'
 onMounted(() => {
     chartData.value = setChartData();
     chartOptions.value = setChartOptions();
+    
+    console.log(data.tasks[0].result[0].items[0].referring_links_types.anchor)
+    keyword.value.text=(data.tasks[0].result[0].items[0].referring_links_types.anchor)%100
+    keyword.value.Image=(data.tasks[0].result[0].items[0].referring_links_types.redirect)%100
+    keyword.value.form=data.tasks[0].result[0].items[0].referring_links_types.alternate
+    keyword.value.Follow=((data.tasks[0].result[0].items[0].backlinks) - (data.tasks[0].result[0].items[0].referring_links_attributes.nofollow))%100
+    keyword.value.Unfollow=(data.tasks[0].result[0].items[0].referring_links_attributes.nofollow)%100
+    keyword.value.Sponsored=(data.tasks[0].result[0].items[0].referring_links_attributes.sponsored)%100
+    keyword.value.UGC=(data.tasks[0].result[0].items[0].referring_links_attributes.ugc)%100 
 });
 
 const chartData = ref();

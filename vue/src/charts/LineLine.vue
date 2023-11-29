@@ -2,6 +2,7 @@
 <template>
     <va-card class=" h-full py-[1%] px-2 ">
         <div class="card">
+             <h class="font-bold text-lg">Backlinks</h>
             <Chart type="line" :data="chartData" :options="chartOptions" class="h-30rem" />
         </div>
     </va-card>
