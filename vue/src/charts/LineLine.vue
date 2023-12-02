@@ -26,8 +26,7 @@ onMounted(() => {
 });
 
 const chartData = ref();
-const chartOptions = ref();
-        
+const chartOptions = ref(); 
 const setChartData = () => {
     const documentStyle = getComputedStyle(document.documentElement);
 

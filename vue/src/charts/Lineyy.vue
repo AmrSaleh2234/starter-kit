@@ -63,6 +63,7 @@ const setChartOptions = () =>  {
     const textColor = documentStyle.getPropertyValue('--text-color');
     const textColorSecondary = documentStyle.getPropertyValue('--text-color-secondary');
     const surfaceBorder = documentStyle.getPropertyValue('--surface-border');
+    
 
     return {
         maintainAspectRatio: false,
@@ -80,6 +81,7 @@ const setChartOptions = () =>  {
         },
         scales: {
             x: {
+              
                 stacked: true,
                 ticks: {
                     color: textColorSecondary

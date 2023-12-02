@@ -1,8 +1,9 @@
 <template>
-    <va-card class=" h-full py-[1%] px-2 grid grid-cols-3 ">
-        <div class=" col-span-2 card flex justify-content-center">
+    <va-card class=" h-full py-[1%] px-2  ">
+        <div class=" col-span-1 card flex justify-content-center">
             <Chart style="" type="doughnut" :data="chartData" :options="chartOptions" class="" />
         </div>
+        
     </va-card>
    
 </template>
